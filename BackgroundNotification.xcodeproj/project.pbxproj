@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		56F733422BCC2C6100D0ED22 /* BackgroundNotificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F733412BCC2C6100D0ED22 /* BackgroundNotificationApp.swift */; };
-		56F733442BCC2C6100D0ED22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F733432BCC2C6100D0ED22 /* ContentView.swift */; };
 		56F733462BCC2C6300D0ED22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F733452BCC2C6300D0ED22 /* Assets.xcassets */; };
 		56F733492BCC2C6300D0ED22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F733482BCC2C6300D0ED22 /* Preview Assets.xcassets */; };
+		56F733502BCC304200D0ED22 /* alert_low.wav in Resources */ = {isa = PBXBuildFile; fileRef = 56F7334F2BCC304200D0ED22 /* alert_low.wav */; };
+		56F733522BCC306B00D0ED22 /* alert_med.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56F733512BCC306B00D0ED22 /* alert_med.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56F7333E2BCC2C6100D0ED22 /* BackgroundNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F733412BCC2C6100D0ED22 /* BackgroundNotificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundNotificationApp.swift; sourceTree = "<group>"; };
-		56F733432BCC2C6100D0ED22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		56F733452BCC2C6300D0ED22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56F733482BCC2C6300D0ED22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		56F7334F2BCC304200D0ED22 /* alert_low.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alert_low.wav; sourceTree = "<group>"; };
+		56F733512BCC306B00D0ED22 /* alert_med.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alert_med.mp3; sourceTree = "<group>"; };
+		56F733532BCC315E00D0ED22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		56F733402BCC2C6100D0ED22 /* BackgroundNotification */ = {
 			isa = PBXGroup;
 			children = (
+				56F733532BCC315E00D0ED22 /* Info.plist */,
 				56F733412BCC2C6100D0ED22 /* BackgroundNotificationApp.swift */,
-				56F733432BCC2C6100D0ED22 /* ContentView.swift */,
+				56F7334F2BCC304200D0ED22 /* alert_low.wav */,
+				56F733512BCC306B00D0ED22 /* alert_med.mp3 */,
 				56F733452BCC2C6300D0ED22 /* Assets.xcassets */,
 				56F733472BCC2C6300D0ED22 /* Preview Content */,
 			);
@@ -127,6 +132,8 @@
 			files = (
 				56F733492BCC2C6300D0ED22 /* Preview Assets.xcassets in Resources */,
 				56F733462BCC2C6300D0ED22 /* Assets.xcassets in Resources */,
+				56F733522BCC306B00D0ED22 /* alert_med.mp3 in Resources */,
+				56F733502BCC304200D0ED22 /* alert_low.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +144,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56F733442BCC2C6100D0ED22 /* ContentView.swift in Sources */,
 				56F733422BCC2C6100D0ED22 /* BackgroundNotificationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +281,7 @@
 				DEVELOPMENT_TEAM = QD27A48GSA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BackgroundNotification/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +311,7 @@
 				DEVELOPMENT_TEAM = QD27A48GSA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BackgroundNotification/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
